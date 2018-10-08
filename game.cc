@@ -2,6 +2,10 @@
 
 #include "game.h"
 
+#ifdef __linux__ 
+  #include <algorithm>
+#endif
+
 // Utility
 
 bool operator==(const Pyramid& lhs, const Pyramid& rhs) {
